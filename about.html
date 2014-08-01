@@ -15,6 +15,90 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
+        <style>
+.flip3d {width:200px; height:200px; margin:10px; float:left;}	
+.flip3d>.front{
+position:absolute;
+/*transform*/
+-webkit-transform:perspective(600px) rotateY(0deg);
+   -moz-transform:perspective(600px) rotateY(0deg);
+    -ms-transform:perspective(600px) rotateY(0deg);
+     -o-transform:perspective(600px) rotateY(0deg);
+        transform:perspective(600px) rotateY(0deg);
+background:#FF530D;
+width:200px;
+height:200px;
+font-size: 18pt;
+/*border-radius*/
+-webkit-border-radius:7px;
+   -moz-border-radius:7px;
+        border-radius:7px;
+/*backface-visibility*/
+-webkit-backface-visibility:hidden;
+   -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+     -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+/*transition*/
+-webkit-transition:transform 0.5s linear 0s;
+   -moz-transition:transform 0.5s linear 0s;
+     -o-transition:transform 0.5s linear 0s;
+        transition:transform 0.5s linear 0s;
+}
+
+.flip3d>.back{
+position:absolute;
+/*transform*/
+-webkit-transform:perspective(600px) rotateY(180deg);
+   -moz-transform:perspective(600px) rotateY(180deg);
+    -ms-transform:perspective(600px) rotateY(180deg);
+     -o-transform:perspective(600px) rotateY(180deg);
+        transform:perspective(600px) rotateY(180deg);
+background:#000;
+width:200px;
+height:200px;
+/*border-radius*/
+-webkit-border-radius:7px;
+   -moz-border-radius:7px;
+        border-radius:7px;
+/*backface-visibility*/
+-webkit-backface-visibility:hidden;
+   -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+     -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+/*transition*/
+-webkit-transition:transform 0.5s linear 0s;
+   -moz-transition:transform 0.5s linear 0s;
+     -o-transition:transform 0.5s linear 0s;
+        transition:transform 0.5s linear 0s;
+}
+
+
+.flip3d:hover>.front{
+/*transform*/
+-webkit-transform:perspective(600px) rotateY(-180deg);
+   -moz-transform:perspective(600px) rotateY(-180deg);
+    -ms-transform:perspective(600px) rotateY(-180deg);
+     -o-transform:perspective(600px) rotateY(-180deg);
+        transform:perspective(600px) rotateY(-180deg);
+}
+
+
+.flip3d:hover>.back{
+/*transform*/
+-webkit-transform:perspective(600px) rotateY(0deg);
+   -moz-transform:perspective(600px) rotateY(0deg);
+    -ms-transform:perspective(600px) rotateY(0deg);
+     -o-transform:perspective(600px) rotateY(0deg);
+        transform:perspective(600px) rotateY(0deg);
+}
+
+</style>
+
+
+
+
     </head>
 	 
     <body id="header">
@@ -48,6 +132,53 @@
                       			<h2>About Us</h2>
                       		</div>
 						</div>
+
+
+<div class="flip3d">
+	<div class="back"><img src="https://lh6.googleusercontent.com/-ejutA0dKzQY/U3qswyupp_I/AAAAAAAAAB8/GyqFFP2-Epg/s399-no/profile.jpg" height="100%" alt=""></div>
+	<div class="front">Charlie</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="http://placekitten.com/240/200" alt=""></div>
+	<div class="front">Dave</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="https://lh4.googleusercontent.com/-s9nfB5LwGgs/Uxu-H1AQCwI/AAAAAAAAABM/IRfdRLJ-BhU/w787-h785-no/IMG_0344.jpg" height="100%" alt=""></div>
+	<div class="front">Aiden</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="https://lh4.googleusercontent.com/-H16iuMVRfmo/UBM6wJ6kDQI/AAAAAAAABQc/Ha0nQZnyzXU/s451-no/06012011044.jpg" height="100%" alt=""></div>
+	<div class="front">Shweta</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="https://avatars0.githubusercontent.com/u/7624898?v=1&s=460" height="100%" alt=""></div>
+	<div class="front">Bronte</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="http://placekitten.com/240/200" alt=""></div>
+	<div class="front">Maria</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="https://lh3.googleusercontent.com/-0oOlGNWvk2E/Usnj_TBDbOI/AAAAAAAAAEI/iSHTChzNIKY/w551-h552-no/7%27s.jpg" width="100%" alt=""></div>
+	<div class="front">Jade</div>
+</div>
+
+<div class="flip3d">
+	<div class="back"><img src="https://lh3.googleusercontent.com/-SHXNXeAHqr4/U9TXMIY93EI/AAAAAAAAADY/W0jNCXI4JxQ/w798-h785-no/New%2BYear%2B2013%2B091.jpg" height="100%" alt=""></div>
+	<div class="front">Claire</div>
+</div>
+			
+
+
+<a href="https://github.com/charliechao/Pure_CSS_Animation.git">
+    <h1>Animations by Charlie</h1>
+  </a> 
                                      
 					</div>
                 </div>
